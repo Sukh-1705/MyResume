@@ -321,32 +321,41 @@ body {
 .skill-items {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .skill-item {
     display: flex;
     align-items: center;
     gap: 1rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.skill-item:last-child {
+    border-bottom: none;
 }
 
 .skill-item i {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: var(--primary-color);
+    width: 30px;
+    text-align: center;
+    flex-shrink: 0;
 }
 
 .skill-bar {
     flex: 1;
-    height: 8px;
+    height: 10px;
     background-color: var(--border-color);
-    border-radius: 4px;
+    border-radius: 5px;
     overflow: hidden;
 }
 
 .skill-level {
     height: 100%;
     background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
-    border-radius: 4px;
+    border-radius: 5px;
     transition: width 1s ease;
 }
 
